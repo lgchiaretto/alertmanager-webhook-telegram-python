@@ -9,7 +9,7 @@ RUN apk update \
                 && rm -rf /var/cache/apk/* \
                 && wget https://github.com/lgchiaretto/alertmanager-webhook-telegram-python/archive/master.zip \
                 && unzip -j master.zip  \
-                && pip install -r requirements.txt \
+                && pip3 install -r requirements.txt \
                 && chmod +x run.sh
 
 EXPOSE 9119
